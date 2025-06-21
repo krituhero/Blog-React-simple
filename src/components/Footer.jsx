@@ -1,9 +1,10 @@
 import React from 'react'
+import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className='footer hidden md:flex-wrap lg:flex flex-col bottom-0 left-0  w-full bg-gray-200 h-112 mt-16 px-20 pt-8'>
-    <div className=" flex gap-4  ">
+    <div className='footer hidden md:flex-wrap lg:flex flex-col bottom-0 left-0  w-full bg-gray-100 h-100 mt-16 px-20 pt-8'>
+    <div className=" flex gap-4  pt-2">
         <div className='flex flex-col flex-1'>
           <span className='font-bold mb-2'>About</span>
           <span className='text-gray-500 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
@@ -34,10 +35,17 @@ const Footer = () => {
           <button className='bg-blue-500 rounded-lg w-full text-white p-2 px-4 '>Subscribe</button>
         </div>
     </div>
-    <div className='mt-8'>
-      
-      
-    </div>
+    <div className='w-full h-0.5 bg-gray-500 mt-8'></div>
+      <div className='mt-4 flex justify-between'>
+        <div className="bottom_left">
+          <div> Meta Blog </div>
+          <div className='flex items-center gap-2'> <FaRegCopyright /> <span> 2025, ALl right reserved </span> </div>
+        </div>
+        <div className="bottom_right flex items-center">
+          Terms of use <span className='ml-4'> private Policy </span>  <span className='ml-4'>cookie Policy</span>
+          </div>
+        
+      </div>
     </div>
 
   )
