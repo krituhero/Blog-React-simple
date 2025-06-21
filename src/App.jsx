@@ -4,7 +4,13 @@ import Homepage from './components/Homepage'
 import Single_post from './components/Single_post'
 import Blogs from './components/Blogs'
 import Author_page from './components/Author_page'
+import Login from './components/Login'
+import Signup from './components/Signup'
+
+
+
 import Notfound from './components/Notfound'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +20,11 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/Author" element={<Author_page />} />
       <Route path="/blogs" element={<Blogs />} />
+      
       <Route path="/blog/:id" element={<Single_post />} />
+
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
 
 
       <Route path="*" element={<Notfound />} />
