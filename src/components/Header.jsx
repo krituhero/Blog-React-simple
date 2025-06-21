@@ -18,8 +18,10 @@ const Header = () => {
         <div className="home"><Link to="/">Home</Link></div>
         <div className="blog"><Link to="blogs">Blog</Link></div>
         <div className="singlePost"><Link to='/blog/:id'>Single Post</Link></div>
-        <div className="pages"><Link to='/'> Pages</Link></div>
+        <div className="pages"><Link to='/Author'> Author</Link></div>
         <div className="contact"> <Link to=''> Contact </Link></div>
+        <div className="login"> <Link to='/login'> Login</Link></div>
+        <div className="signup"> <Link to='/signup'> Signup</Link></div>
       </div>
       <div className="right hidden lg:flex lg:justify-center lg:ml-8 lg:pl-4 lg:mr-8 lg:gap-4">
         <div className='search w-auto relative'>
@@ -52,7 +54,7 @@ const Header = () => {
             <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link to="/blogs" onClick={() => setMenuOpen(false)}>Blog</Link>
             <Link to="/blog/:id" onClick={() => setMenuOpen(false)}>Single Post</Link>
-            <Link to="/" onClick={() => setMenuOpen(false)}>Pages</Link>
+            <Link to="/Author" onClick={() => setMenuOpen(false)}>Author</Link>
             <Link to="" onClick={() => setMenuOpen(false)}>Contact</Link>
             
           </div>
