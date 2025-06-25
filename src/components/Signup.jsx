@@ -6,8 +6,10 @@ import { FcGoogle } from "react-icons/fc";
 import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
 
+import Swal from "sweetalert2";
+
 const Signup = () => {
-  const { values, handleBlur, handleChange, touched , errors,  handleSubmit } = useFormik({
+  const { values, handleBlur, handleChange, touched, errors, handleSubmit } = useFormik({
     initialValues: {
       email: "",
       password: "",
@@ -30,8 +32,13 @@ const Signup = () => {
     }),
     onSubmit: (values) => {
       console.log(JSON.stringify(values, null, 2));
+      Swal.fire({
+        title: "User Created Successfully",
+        icon: "success",
+        
+      });
     },
-    
+
   })
 
   return (
@@ -110,6 +117,7 @@ const Signup = () => {
             <button
               type="button"
               className="w-full flex items-center justify-center border border-gray-300 rounded-lg py-2 hover:shadow-md transition"
+
             >
               <FcGoogle className="mr-2 text-lg" />
               Sign up with Google
