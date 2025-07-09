@@ -1,11 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import { FcGoogle } from "react-icons/fc";
 import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
-
 import Swal from "sweetalert2";
 
 const Signup = () => {
