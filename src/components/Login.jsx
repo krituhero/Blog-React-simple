@@ -14,7 +14,6 @@ const Login = () => {
           <p className="mt-2 text-center text-sm text-gray-600">
             Enter your details below
           </p>
-
           <form className="mt-6 space-y-5">
             <input
               type="text"
@@ -25,7 +24,6 @@ const Login = () => {
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-
             <input
               type="password"
               name="password"
@@ -34,18 +32,15 @@ const Login = () => {
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-
             <div className="flex items-center justify-between">
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
-              >
+                className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300">
                 Log In
               </button>
               <a
                 href="#"
-                className="text-blue-600 hover:underline text-sm font-medium"
-              >
+                className="text-blue-600 hover:underline text-sm font-medium">
                 Forgot Password?
               </a>
             </div>
