@@ -6,9 +6,7 @@ import { IoMdMoon } from "react-icons/io";
 import { FaBlog, FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
-
   const [menuOpen, setMenuOpen] = useState(false)
-
   return (
     <div className="header fixed top-0 left-0 w-full z-50 h-20 pt-6 gap-8 flex  justify-center bg-gray-100">
       <div className="logo pl-8 ml-8 mr-8 pr-4 pt-2">
@@ -35,19 +33,13 @@ const Header = () => {
           <button className='toggle bg-transparent hover:bg-zinc-200 rounded-sm px-2 py-2 '>
             <IoMdMoon />
           </button>
-        </div>
-
-       
+        </div> 
       </div>
-
        <div className="lg:hidden flex justify-right pr-8 ">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
           </button>
       </div>
-
-      
-
       {menuOpen && (
         <div className="lg:hidden fixed top-20 left-0 w-full bg-gray-100 shadow-md z-40">
           <div className="flex flex-col items-start gap-4 p-4">
@@ -55,12 +47,10 @@ const Header = () => {
             <Link to="/blogs" onClick={() => setMenuOpen(false)}>Blog</Link>
             <Link to="/blog/:id" onClick={() => setMenuOpen(false)}>Single Post</Link>
             <Link to="/Author" onClick={() => setMenuOpen(false)}>Author</Link>
-            <Link to="" onClick={() => setMenuOpen(false)}>Contact</Link>
-            
+            <Link to="" onClick={() => setMenuOpen(false)}>Contact</Link>        
           </div>
         </div>
       )}
-
     </div>
   )
 }
