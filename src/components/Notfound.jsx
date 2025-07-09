@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// error page
 const Notfound = () => {
   return (
     <div className='text-center lg:mt-[200px] mt-8 '>
