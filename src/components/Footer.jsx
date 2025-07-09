@@ -43,11 +43,9 @@ const Footer = () => {
         </div>
         <div className="bottom_right flex items-center">
           Terms of use <span className='ml-4'> private Policy </span>  <span className='ml-4'>cookie Policy</span>
-          </div>
-        
+          </div>   
       </div>
     </div>
-
   )
 }
 
