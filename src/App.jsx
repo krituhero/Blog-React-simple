@@ -6,9 +6,6 @@ import Blogs from './components/Blogs'
 import Author_page from './components/Author_page'
 import Login from './components/Login'
 import Signup from './components/Signup'
-
-
-
 import Notfound from './components/Notfound'
 
 
